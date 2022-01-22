@@ -8,7 +8,8 @@ import WSS from './WSS';
 
 ReactDOM.render(
   <React.StrictMode>
-    <WSS />
+    {/* <WSS /> */}
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
