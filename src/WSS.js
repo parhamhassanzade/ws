@@ -29,13 +29,14 @@ function WSS() {
       `wss://stream.binance.com:9443/ws/${crypto}@trade`
     );
   }, []);
-
+//!open the console
   useEffect(() => {
     let tempPrice = [];
     let tempAmount = [];
     const apiCall = () => {
       ws.current.onmessage = (event) => {
         let data = JSON.parse(event.data);
+        console.log(data);
         tempPrice.push(data.p);
         tempAmount.push(data.q);
       };
