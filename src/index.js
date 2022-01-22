@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import WSS from './WSS';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <WSS />
   </React.StrictMode>,
   document.getElementById('root')
 );
